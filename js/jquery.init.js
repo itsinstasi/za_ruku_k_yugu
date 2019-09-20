@@ -47,4 +47,6 @@ $(document).ready(function(){
 $(function() {  
 	// Default
 	$('img').loadScroll();
+
+	$('.stories').show();
 });
