@@ -1,2 +1,2 @@
 ﻿User-agent: *
-Sitemap: https://za-ruku-k-yugu.itsinsta.site/sitemap.xml
+Sitemap: http://za-ruku-k-yugu.itsinsta.site/sitemap.xml
