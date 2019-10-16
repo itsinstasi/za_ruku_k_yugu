@@ -30,11 +30,11 @@
     <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#fff">
     
-    <link rel="image_src" href="https://scontent-arn2-2.cdninstagram.com/vp/7909ddc5fd0939cbe1c87c4877e152b3/5DA581D5/t51.2885-15/e15/45336079_1430305363770789_3098262053112166932_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" />
+    <link rel="image_src" href="https://scontent-arn2-2.cdninstagram.com/vp/8b0599bb9a7b94709a6e3566d10c1dfa/5DA97655/t51.2885-15/e15/45336079_1430305363770789_3098262053112166932_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" />
     <meta name="robots" content="INDEX, FOLLOW" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://za-ruku-k-yugu.itsinsta.site/posts/xxuznay-o-prelestyakh-doistoricheskogo-lesa-anaga-na-tenerife-i-napishi-v-kommentarii-skol-ko-zhivykh-xxdi.html" />
-    <meta property="og:image" content="https://scontent-arn2-2.cdninstagram.com/vp/7909ddc5fd0939cbe1c87c4877e152b3/5DA581D5/t51.2885-15/e15/45336079_1430305363770789_3098262053112166932_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" />
+    <meta property="og:image" content="https://scontent-arn2-2.cdninstagram.com/vp/8b0599bb9a7b94709a6e3566d10c1dfa/5DA97655/t51.2885-15/e15/45336079_1430305363770789_3098262053112166932_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="720"/>
     <meta property="og:image:height" content="720"/>
@@ -42,6 +42,9 @@
     <meta property="og:description" content="🍀УЗНАЙ О ПРЕЛЕСТЯХ ДОИСТОРИЧЕСКОГО ЛЕСА АНАГА НА ТЕНЕРИФЕ и напиши в комментарии сколько живых 🦖динозавров вы нашли в этом видео❓" />
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="za_ruku_k_yugu" />
+
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
 
 </head>
 <body>
@@ -54,12 +57,12 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="../main.html" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/vp/683d92d2c557691b81d414c578ff4358/5E399807/t51.2885-19/s150x150/54266371_341266033166305_1059882235118747648_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com" alt="Наш Тенерифе"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/vp/e7993c76b880a641b9f45f7170fec33d/5E612507/t51.2885-19/s150x150/54266371_341266033166305_1059882235118747648_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com" alt="Наш Тенерифе"></div>
 							<div class="header__logo-txt">za_ruku_k_yugu</div>
 						</a>
 						<div class="header__title">Наш Тенерифе</div>
@@ -68,249 +71,255 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тенерифе">
-								<a href="../tags/./tenerife.html">
-									<div class="stories__slide-pic"><img src="../img/og/tenerife.png" alt="тенерифе" /></div>
-									<div class="stories__slide-txt">тенерифе</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тенерифе">
+										<a href="../tags/./tenerife.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tenerife.png);"></div>
+											<div class="stories__slide-txt">тенерифе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="лайфхак тенерифе">
+										<a href="../tags/./layfkhak-tenerife.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/layfkhak-tenerife.png);"></div>
+											<div class="stories__slide-txt">лайфхак тенерифе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тенерифе гид">
+										<a href="../tags/./tenerife-gid.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tenerife-gid.png);"></div>
+											<div class="stories__slide-txt">тенерифе гид</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="люблю тенерифе">
+										<a href="../tags/./lyublyu-tenerife.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/lyublyu-tenerife.png);"></div>
+											<div class="stories__slide-txt">люблю тенерифе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="канары">
+										<a href="../tags/./kanary.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kanary.png);"></div>
+											<div class="stories__slide-txt">канары</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="гид тенерифе">
+										<a href="../tags/./gid-tenerife.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/gid-tenerife.png);"></div>
+											<div class="stories__slide-txt">гид тенерифе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="испания">
+										<a href="../tags/./ispaniya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ispaniya.png);"></div>
+											<div class="stories__slide-txt">испания</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="хочу в испанию">
+										<a href="../tags/./khochu-v-ispaniyu.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/khochu-v-ispaniyu.png);"></div>
+											<div class="stories__slide-txt">хочу в испанию</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="канарскиеострова">
+										<a href="../tags/./kanarskieostrova.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kanarskieostrova.png);"></div>
+											<div class="stories__slide-txt">канарскиеострова</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тенерифе 2018">
+										<a href="../tags/./tenerife-2018.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tenerife-2018.png);"></div>
+											<div class="stories__slide-txt">тенерифе 2018</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тенерифе фото">
+										<a href="../tags/./tenerife-foto.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tenerife-foto.png);"></div>
+											<div class="stories__slide-txt">тенерифе фото</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="хочуна тенерифе">
+										<a href="../tags/./khochuna-tenerife.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/khochuna-tenerife.png);"></div>
+											<div class="stories__slide-txt">хочуна тенерифе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тур тенерифе">
+										<a href="../tags/./tur-tenerife.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tur-tenerife.png);"></div>
+											<div class="stories__slide-txt">тур тенерифе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="отдых испания">
+										<a href="../tags/./otdykh-ispaniya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/otdykh-ispaniya.png);"></div>
+											<div class="stories__slide-txt">отдых испания</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="люблю тспанию">
+										<a href="../tags/./lyublyu-tspaniyu.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/lyublyu-tspaniyu.png);"></div>
+											<div class="stories__slide-txt">люблю тспанию</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="отдыхв испании уморя">
+										<a href="../tags/./otdykhv-ispanii-umorya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/otdykhv-ispanii-umorya.png);"></div>
+											<div class="stories__slide-txt">отдыхв испании уморя</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тенерифе аренда">
+										<a href="../tags/./tenerife-arenda.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tenerife-arenda.png);"></div>
+											<div class="stories__slide-txt">тенерифе аренда</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тенерифе видео">
+										<a href="../tags/./tenerife-video.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tenerife-video.png);"></div>
+											<div class="stories__slide-txt">тенерифе видео</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тенерифе рус">
+										<a href="../tags/./tenerife-rus.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tenerife-rus.png);"></div>
+											<div class="stories__slide-txt">тенерифе рус</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тенерифе ждёт">
+										<a href="../tags/./tenerife-zhdyot.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tenerife-zhdyot.png);"></div>
+											<div class="stories__slide-txt">тенерифе ждёт</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тенерифе с детьми">
+										<a href="../tags/./tenerife-s-det-mi.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tenerife-s-det-mi.png);"></div>
+											<div class="stories__slide-txt">тенерифе с детьми</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тенерифе фотограф">
+										<a href="../tags/./tenerife-fotograf.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tenerife-fotograf.png);"></div>
+											<div class="stories__slide-txt">тенерифе фотограф</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="аренда тенерифе">
+										<a href="../tags/./arenda-tenerife.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/arenda-tenerife.png);"></div>
+											<div class="stories__slide-txt">аренда тенерифе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="хочуна канары">
+										<a href="../tags/./khochuna-kanary.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/khochuna-kanary.png);"></div>
+											<div class="stories__slide-txt">хочуна канары</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="хочу тенерифе">
+										<a href="../tags/./khochu-tenerife.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/khochu-tenerife.png);"></div>
+											<div class="stories__slide-txt">хочу тенерифе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="тенерифе аппартаменты">
+										<a href="../tags/./tenerife-appartamenty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tenerife-appartamenty.png);"></div>
+											<div class="stories__slide-txt">тенерифе аппартаменты</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="аппартаменты тенерифе">
+										<a href="../tags/./appartamenty-tenerife.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/appartamenty-tenerife.png);"></div>
+											<div class="stories__slide-txt">аппартаменты тенерифе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="отдых с детьми">
+										<a href="../tags/./otdykh-s-det-mi.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/otdykh-s-det-mi.png);"></div>
+											<div class="stories__slide-txt">отдых с детьми</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="канары 2018">
+										<a href="../tags/./kanary-2018.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kanary-2018.png);"></div>
+											<div class="stories__slide-txt">канары 2018</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="лайфхак тенкрифе">
+										<a href="../tags/./layfkhak-tenkrife.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/layfkhak-tenkrife.png);"></div>
+											<div class="stories__slide-txt">лайфхак тенкрифе</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="лайфхак тенерифе">
-								<a href="../tags/./layfkhak-tenerife.html">
-									<div class="stories__slide-pic"><img src="../img/og/layfkhak-tenerife.png" alt="лайфхак тенерифе" /></div>
-									<div class="stories__slide-txt">лайфхак тенерифе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тенерифе гид">
-								<a href="../tags/./tenerife-gid.html">
-									<div class="stories__slide-pic"><img src="../img/og/tenerife-gid.png" alt="тенерифе гид" /></div>
-									<div class="stories__slide-txt">тенерифе гид</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="люблю тенерифе">
-								<a href="../tags/./lyublyu-tenerife.html">
-									<div class="stories__slide-pic"><img src="../img/og/lyublyu-tenerife.png" alt="люблю тенерифе" /></div>
-									<div class="stories__slide-txt">люблю тенерифе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="канары">
-								<a href="../tags/./kanary.html">
-									<div class="stories__slide-pic"><img src="../img/og/kanary.png" alt="канары" /></div>
-									<div class="stories__slide-txt">канары</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="гид тенерифе">
-								<a href="../tags/./gid-tenerife.html">
-									<div class="stories__slide-pic"><img src="../img/og/gid-tenerife.png" alt="гид тенерифе" /></div>
-									<div class="stories__slide-txt">гид тенерифе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="испания">
-								<a href="../tags/./ispaniya.html">
-									<div class="stories__slide-pic"><img src="../img/og/ispaniya.png" alt="испания" /></div>
-									<div class="stories__slide-txt">испания</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="хочу в испанию">
-								<a href="../tags/./khochu-v-ispaniyu.html">
-									<div class="stories__slide-pic"><img src="../img/og/khochu-v-ispaniyu.png" alt="хочу в испанию" /></div>
-									<div class="stories__slide-txt">хочу в испанию</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="канарскиеострова">
-								<a href="../tags/./kanarskieostrova.html">
-									<div class="stories__slide-pic"><img src="../img/og/kanarskieostrova.png" alt="канарскиеострова" /></div>
-									<div class="stories__slide-txt">канарскиеострова</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тенерифе 2018">
-								<a href="../tags/./tenerife-2018.html">
-									<div class="stories__slide-pic"><img src="../img/og/tenerife-2018.png" alt="тенерифе 2018" /></div>
-									<div class="stories__slide-txt">тенерифе 2018</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тенерифе фото">
-								<a href="../tags/./tenerife-foto.html">
-									<div class="stories__slide-pic"><img src="../img/og/tenerife-foto.png" alt="тенерифе фото" /></div>
-									<div class="stories__slide-txt">тенерифе фото</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="хочуна тенерифе">
-								<a href="../tags/./khochuna-tenerife.html">
-									<div class="stories__slide-pic"><img src="../img/og/khochuna-tenerife.png" alt="хочуна тенерифе" /></div>
-									<div class="stories__slide-txt">хочуна тенерифе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тур тенерифе">
-								<a href="../tags/./tur-tenerife.html">
-									<div class="stories__slide-pic"><img src="../img/og/tur-tenerife.png" alt="тур тенерифе" /></div>
-									<div class="stories__slide-txt">тур тенерифе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="отдых испания">
-								<a href="../tags/./otdykh-ispaniya.html">
-									<div class="stories__slide-pic"><img src="../img/og/otdykh-ispaniya.png" alt="отдых испания" /></div>
-									<div class="stories__slide-txt">отдых испания</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="люблю тспанию">
-								<a href="../tags/./lyublyu-tspaniyu.html">
-									<div class="stories__slide-pic"><img src="../img/og/lyublyu-tspaniyu.png" alt="люблю тспанию" /></div>
-									<div class="stories__slide-txt">люблю тспанию</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="отдыхв испании уморя">
-								<a href="../tags/./otdykhv-ispanii-umorya.html">
-									<div class="stories__slide-pic"><img src="../img/og/otdykhv-ispanii-umorya.png" alt="отдыхв испании уморя" /></div>
-									<div class="stories__slide-txt">отдыхв испании уморя</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тенерифе аренда">
-								<a href="../tags/./tenerife-arenda.html">
-									<div class="stories__slide-pic"><img src="../img/og/tenerife-arenda.png" alt="тенерифе аренда" /></div>
-									<div class="stories__slide-txt">тенерифе аренда</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тенерифе видео">
-								<a href="../tags/./tenerife-video.html">
-									<div class="stories__slide-pic"><img src="../img/og/tenerife-video.png" alt="тенерифе видео" /></div>
-									<div class="stories__slide-txt">тенерифе видео</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тенерифе рус">
-								<a href="../tags/./tenerife-rus.html">
-									<div class="stories__slide-pic"><img src="../img/og/tenerife-rus.png" alt="тенерифе рус" /></div>
-									<div class="stories__slide-txt">тенерифе рус</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тенерифе ждёт">
-								<a href="../tags/./tenerife-zhdyot.html">
-									<div class="stories__slide-pic"><img src="../img/og/tenerife-zhdyot.png" alt="тенерифе ждёт" /></div>
-									<div class="stories__slide-txt">тенерифе ждёт</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тенерифе с детьми">
-								<a href="../tags/./tenerife-s-det-mi.html">
-									<div class="stories__slide-pic"><img src="../img/og/tenerife-s-det-mi.png" alt="тенерифе с детьми" /></div>
-									<div class="stories__slide-txt">тенерифе с детьми</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тенерифе фотограф">
-								<a href="../tags/./tenerife-fotograf.html">
-									<div class="stories__slide-pic"><img src="../img/og/tenerife-fotograf.png" alt="тенерифе фотограф" /></div>
-									<div class="stories__slide-txt">тенерифе фотограф</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="аренда тенерифе">
-								<a href="../tags/./arenda-tenerife.html">
-									<div class="stories__slide-pic"><img src="../img/og/arenda-tenerife.png" alt="аренда тенерифе" /></div>
-									<div class="stories__slide-txt">аренда тенерифе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="хочуна канары">
-								<a href="../tags/./khochuna-kanary.html">
-									<div class="stories__slide-pic"><img src="../img/og/khochuna-kanary.png" alt="хочуна канары" /></div>
-									<div class="stories__slide-txt">хочуна канары</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="хочу тенерифе">
-								<a href="../tags/./khochu-tenerife.html">
-									<div class="stories__slide-pic"><img src="../img/og/khochu-tenerife.png" alt="хочу тенерифе" /></div>
-									<div class="stories__slide-txt">хочу тенерифе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="тенерифе аппартаменты">
-								<a href="../tags/./tenerife-appartamenty.html">
-									<div class="stories__slide-pic"><img src="../img/og/tenerife-appartamenty.png" alt="тенерифе аппартаменты" /></div>
-									<div class="stories__slide-txt">тенерифе аппартаменты</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="аппартаменты тенерифе">
-								<a href="../tags/./appartamenty-tenerife.html">
-									<div class="stories__slide-pic"><img src="../img/og/appartamenty-tenerife.png" alt="аппартаменты тенерифе" /></div>
-									<div class="stories__slide-txt">аппартаменты тенерифе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="отдых с детьми">
-								<a href="../tags/./otdykh-s-det-mi.html">
-									<div class="stories__slide-pic"><img src="../img/og/otdykh-s-det-mi.png" alt="отдых с детьми" /></div>
-									<div class="stories__slide-txt">отдых с детьми</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="канары 2018">
-								<a href="../tags/./kanary-2018.html">
-									<div class="stories__slide-pic"><img src="../img/og/kanary-2018.png" alt="канары 2018" /></div>
-									<div class="stories__slide-txt">канары 2018</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="лайфхак тенкрифе">
-								<a href="../tags/./layfkhak-tenkrife.html">
-									<div class="stories__slide-pic"><img src="../img/og/layfkhak-tenkrife.png" alt="лайфхак тенкрифе" /></div>
-									<div class="stories__slide-txt">лайфхак тенкрифе</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -335,17 +344,44 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/7909ddc5fd0939cbe1c87c4877e152b3/5DA581D5/t51.2885-15/e15/45336079_1430305363770789_3098262053112166932_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/5c1941b6a3f712135a4d5521c092b322/5DA5D1DE/t51.2885-15/e15/46132828_2051916338204345_5299371221818526172_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/696d0cd27d89dcfe5dc6cf96a8a4ea7a/5DA553B8/t51.2885-15/e15/46791591_1959717040815457_5082806797817782227_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/53cc3e0b1cb62d711c09d7cd60b9df3c/5DA56446/t51.2885-15/e15/46700176_2190217587676024_6286552832885344903_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/9fe5e76c12d83036d8e9c008fc0f375a/5DA5718E/t51.2885-15/e15/44671665_782819538723841_6414307119619874279_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/1a423715c23818a0b57af4904397c903/5DA5512A/t51.2885-15/e15/45819963_849708361866291_4666275449451791535_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/a9c0e68383d1dc2c5a969cad441a930b/5DA5B644/t51.2885-15/e15/46084816_367616023973195_8111513054464404635_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/0e6b965035897772d07000e2ccdf9919/5DA564AB/t51.2885-15/e15/46652083_116056812762145_7871586045053277497_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/d861834045b7dffd439b2eba295fb831/5DA5CDE2/t51.2885-15/e15/46767096_133470507646800_4668972730730155727_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/2346a986a84bab2aaa8114549fb26908/5DA63DD1/t51.2885-15/e15/46717642_1370622316405554_5753398248341597444_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/8b0599bb9a7b94709a6e3566d10c1dfa/5DA97655/t51.2885-15/e15/45336079_1430305363770789_3098262053112166932_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/cbe31a1df010ba387e9caf55bdb58a36/5DA91D9E/t51.2885-15/e15/46132828_2051916338204345_5299371221818526172_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/c4d9619319c21a02c519883f2c1e618b/5DA94838/t51.2885-15/e15/46791591_1959717040815457_5082806797817782227_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/e32e7f4816a0f5401cbf8b3fcede50da/5DA958C6/t51.2885-15/e15/46700176_2190217587676024_6286552832885344903_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/58751307c507e42a4be5c4a33e643914/5DA9660E/t51.2885-15/e15/44671665_782819538723841_6414307119619874279_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/4c49a3451751df932cb675e16f5bf191/5DA945AA/t51.2885-15/e15/45819963_849708361866291_4666275449451791535_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/bc74e4a49b3baef8bce26dc9762d31e2/5DA90204/t51.2885-15/e15/46084816_367616023973195_8111513054464404635_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/fdb6ead2cc995adcbccf7a807bdbdb82/5DA9592B/t51.2885-15/e15/46652083_116056812762145_7871586045053277497_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/7c63fdd78951c368373d986942a6c78b/5DA919A2/t51.2885-15/e15/46767096_133470507646800_4668972730730155727_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/92734a314d2d6c049398b5f77cdf3855/5DA98991/t51.2885-15/e15/46717642_1370622316405554_5753398248341597444_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p><a href="https://www.instagram.com/p/BrSYwSLjsDf/" 
 									target="_blank">Смотрите видео</a></p> 
@@ -353,9 +389,7 @@
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/BrSYwSLjsDf/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -454,7 +488,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>5</span> <span><i class="fa fa-heart" aria-hidden="true"></i>92</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/8d22c86c0ef912a915f92a016248e2d0/5DA54F1A/t51.2885-15/e15/54247423_2366073726792911_5548659633008872432_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt="Чем занять детей на Тенерифе?">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/218e79e4ccc06b526ef0b38c46eb0c13/5DA9439A/t51.2885-15/e15/54247423_2366073726792911_5548659633008872432_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt="Чем занять детей на Тенерифе?">
 								</div>
 								<div class="article-more__item-name">Чем занять детей на Тенерифе?</div>
 							</a>
@@ -463,7 +497,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>7</span> <span><i class="fa fa-heart" aria-hidden="true"></i>78</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/2c08577a1aa3950fbdedfa0f4104f1f7/5DA6495F/t51.2885-15/e15/53275056_143790629997508_5603617540829304158_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt="Наши первые соревнования по художественной гимнастике на">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/7f8c76ae805d1d934e7af198dfe2d7d4/5DA9951F/t51.2885-15/e15/53275056_143790629997508_5603617540829304158_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt="Наши первые соревнования по художественной гимнастике на">
 								</div>
 								<div class="article-more__item-name">Наши первые соревнования по художественной гимнастике на</div>
 							</a>
@@ -472,7 +506,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>2</span> <span><i class="fa fa-heart" aria-hidden="true"></i>79</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/1bf9b9275911b4454021f877ede92268/5DA5C4C6/t51.2885-15/e15/55847246_186957068947181_2618543230319370176_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Хватит валяться на пляжах, вперёд к приключениям в поисках водопада на">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/e0f3ab503cd3dedc8e488272d410dfe8/5DA91086/t51.2885-15/e15/55847246_186957068947181_2618543230319370176_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Хватит валяться на пляжах, вперёд к приключениям в поисках водопада на">
 								</div>
 								<div class="article-more__item-name">Хватит валяться на пляжах, вперёд к приключениям в поисках водопада на</div>
 							</a>
@@ -488,9 +522,9 @@
 							<a href="./nashi-novye-sorevnovaniya-v-ramkakh-dnya-gimnastiki-na.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>5</span> <span><i class="fa fa-heart" aria-hidden="true"></i>62</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>5</span> <span><i class="fa fa-heart" aria-hidden="true"></i>63</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/facdf0affdd046acaf417cd8e244e66e/5DA56343/t51.2885-15/e35/62002908_813578969029387_6977739935284290565_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt="Наши новые соревнования в рамках дня гимнастики на">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/80f7f773b5be8555a6e4f3f0135986cc/5DA957C3/t51.2885-15/e35/62002908_813578969029387_6977739935284290565_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt="Наши новые соревнования в рамках дня гимнастики на">
 								</div>
 								<div class="article-more__item-name">Наши новые соревнования в рамках дня гимнастики на</div>
 							</a>
@@ -506,7 +540,7 @@
 							<a href="./gde-na.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>53</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>54</span>
 									</div>
 									<img src="https://scontent-arn2-2.cdninstagram.com/vp/9bcbf0a1d2f7d48321ccdf659529e1ac/5E3FC845/t51.2885-15/e35/64564932_2296431357115623_5001420406975609421_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt="Где на купить качественные фирменные шмотки с классной скидкой?">
 								</div>
@@ -560,11 +594,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->

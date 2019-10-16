@@ -1,3 +1,6 @@
+//var supportsTouch = ('ontouchstart' in document.documentElement);
+//console.log(supportsTouch);
+
 $(document).ready(function(){
 	//grid
 	$('#js-grid').on('click', function(){
@@ -20,49 +23,31 @@ $(document).ready(function(){
 		
 		//скрипт создания разметки попапа
 		
-		
-		$('#js-stories-popap-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-			if((currentSlide + 1) ==  slick.slideCount){
-				$('#js-stories-popap-slider').slick('slickPause');
-			}
-		}).on('init', function() {
-			console.log('init');
-			setTimeout(function() {
-				$(document).find('#js-stories-popap-slider .slick-track').eq(0).focusin();
-				console.log($('#js-stories-popap-slider .slick-track').eq(0));
-		  	}, 500);
-		}).slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			lazyLoad: 'ondemand',
-			arrows: false,
-			dots: true,
-			infinite: false,
-			fade: true,
-			pauseOnFocus: false,
-			pauseOnHover: false,
-			accessibility: true,
-			autoplay: true,
-			autoplaySpeed: 10000,
-			responsive: [
-				{
-					breakpoint: 768,
-					settings: {
-						fade: false
-					}
-				}
-			]
+		var storiesSwiper = new Swiper('#js-stories-popap-slider', {			
+			mousewheel: mouseIs,
+    		keyboard: true,
+			cssMode: true,
+			effect: 'fade',
+			lazy: true,
+      		autoplay: {
+        		delay: 10000,
+        		disableOnInteraction: false,
+				stopOnLastSlide: true,
+      		},
+      		pagination: {
+        		el: '#js-stories-popap-slider-pagination',
+        		clickable: true,
+      		},
 		});
 		
 		function playPauseAutoplayFn(){
 			if($('#js-stop-play-autoplay').hasClass('pause')){
 				$('#js-stop-play-autoplay').add('#js-stories-popap-slider').removeClass('pause');
-				$('#js-stories-popap-slider').slick('slickPlay');
+				storiesSwiper.autoplay.start();
 			} else{
 				$('#js-stop-play-autoplay').add('#js-stories-popap-slider').addClass('pause');
-				$('#js-stories-popap-slider').slick('slickPause');
+				storiesSwiper.autoplay.stop();
 			}
-			console.log('1');
 		}
 		$('#js-stop-play-autoplay').on('click', function(){
 			playPauseAutoplayFn();
@@ -76,16 +61,7 @@ $(document).ready(function(){
 				playPauseAutoplayFn();			
 			}
 		});
-	});
-	
-	//mob contacts list
-//	if($(window).width() < 768){
-//		$('#js-cont-list-btn').on('click', function(){
-//			$('#js-cont-list').toggleClass('open');
-//		});
-//	}	
-	
-	
+	});	
 	$('.js-stories-popup-close').on('click', function(){
 		$('#js-stories-popup').fadeOut(250);
 		$('#js-stories-popap-slider').slick('unslick');
@@ -94,23 +70,54 @@ $(document).ready(function(){
 	//tags bar fix
 	if($(window).width() >= 768){
 		if($('#js-tags').length){
-			var winHeight = $(window).height();
-			var cont = $('#ja-article-wrap');
-			var tags = $('#js-tags');
-			var contTop = cont.offset().top;
-			var contHeight = cont.height();
-			var tagsHeight = tags.height();
-			if(tagsHeight < winHeight){
 				$(window).on('scroll', function(){
+					var winHeight = $(window).height();
+					var cont = $('#ja-article-wrap');
+					var tags = $('#js-tags');
+					var contTop = cont.offset().top;
+					var contHeight = cont.height();
+					var tagsHeight = tags.height();
 					var windScrollTop = $(window).scrollTop();
-					if((windScrollTop >= contTop - 70) && ((windScrollTop + tagsHeight) < (contTop + contHeight) )){
-						tags.addClass('fix');
-					} else{
-						tags.removeClass('fix');
-					}
-				})
-			}			
+					if(tagsHeight < winHeight){
+						if((windScrollTop >= contTop - 70) && ((windScrollTop + tagsHeight) < (contTop + contHeight) )){
+							tags.addClass('fix');
+						} else{
+							tags.removeClass('fix');
+						}
+					}					
+				})	
 		}
 	}
 	
+	//change header
+	$(window).on('scroll', function(){
+		if($(window).scrollTop() > 51){
+			$('#js-header').addClass('scrolled');
+		} else{
+			$('#js-header').removeClass('scrolled');
+		}
+		if($(window).scrollTop() > 51){
+			$('#js-header').addClass('scrolled');
+		} else{
+			$('#js-header').removeClass('scrolled');
+		}
+	});
+	if($('#js-main-header').length && $('#js-items').length){
+		$(window).on('scroll', function(){
+			if($(window).scrollTop() > $('#js-items').offset().top){
+				$('#js-main-header').addClass('showed');
+			} else{
+				$('#js-main-header').removeClass('showed');
+			}
+		});
+	}
+	
+    $('#js-header-up').click(function(){
+    	$('html, body').animate({ scrollTop: 0}, 250); 
+    }); 
+	
+	//accordion
+	$('.js-accordion-btn').on('click', function(){
+		$(this).toggleClass('open').next('.js-accordion-main').slideToggle(250);
+	});
 });

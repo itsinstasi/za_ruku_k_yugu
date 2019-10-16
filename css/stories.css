@@ -1,12 +1,14 @@
 .stories{margin-bottom: 44px;}
 .stories__slider{
 	position: relative;
-	width: calc(100% + 30px);
-	margin-left: -15px;
-	padding: 0 15px;
+	width: calc(100% - 15px);
+	margin: 0 auto;	
+	overflow: hidden;
 }
+.stories__slider-wrap{position: relative;}
+.stories__slider .swiper-slide{width: auto;}
 .stories__slider .slick-slide{outline: none;}
-.stories__slider .slick-arrow{
+.stories__arrow{
 	display: block;
     padding: 0;
     outline: 0!important;
@@ -30,8 +32,9 @@
 	width: 24px;
 	height: 24px;
 	font-size: 0;	
+	z-index: 6;
 }
-.stories__slider .slick-arrow:before{
+.stories__arrow:before{
 	-webkit-transition: color .25s ease;
     -o-transition: color .25s ease;
     transition: color .25s ease; 
@@ -42,12 +45,12 @@
 	color: var(--unactive-txt-color);
 	font: normal normal normal 24px/1 FontAwesome;
 }
-.stories__slider .slick-arrow:hover:before{color: var(--main-txt-color);}
-.stories__slider .slick-disabled{display: none !important;}
-.stories__slider .slick-prev{left: 0;}
-.stories__slider .slick-next{right: 0;}
-.stories__slider .slick-prev:before{content: '\f137';}
-.stories__slider .slick-next:before{content: '\f138';}
+.stories__arrow:hover:before{color: var(--main-txt-color);}
+.stories__arrow.swiper-button-disabled{display: none !important;}
+.stories__arrow--prev{left: -7px;}
+.stories__arrow--next{right: -7px;}
+.stories__arrow--prev:before{content: '\f137';}
+.stories__arrow--next:before{content: '\f138';}
 .stories__slide{
 	width: 87px;
 	margin: 0 auto;
@@ -57,14 +60,12 @@
 	height: 87px;
 	border-radius: 50%;
 	overflow: hidden;
-	background-color: var(--main-bg-color);
+	background: center center no-repeat var(--main-bg-color);
+	-webkit-background-size: cover;
+	background-size: cover;
 	border: 1px solid var(--brd-color);
 	box-shadow: 0 0 0 3px #fff inset;
 	cursor: pointer;
-}
-.stories__slide-pic img{
-	border: 3px solid #fff;
-	border-radius: 50%;
 }
 .stories__slide-txt{
 	text-align: center;
@@ -81,9 +82,9 @@
 @media only screen and (max-width : 767px){
 	.stories{margin-bottom: 21px;}
 	.stories__slider{
-		width: 100%;
-		margin: 0;
-		padding: 0 14px;
+		width: calc(100% - 30px);
+		margin: 0 auto;
+		padding: 0;
 	}
 	.stories__slider .slick-next{right: -10px;}
 	.stories__slider .slick-prev{left: -10px;}
@@ -186,16 +187,21 @@
 	color: var(--unactive-txt-color);
 	margin-right: 20px;
 }
-.stories-popup__slider{
+.stories-popup__slider-wrap{
 	position: relative;
 	padding: 24px 30px 0 0;
 }
+.stories-popup__slider{
+	overflow: hidden;
+}
 .stories-popup__slider .slick-slide{outline: none;}
-.stories-popup__slider .slick-dots{
+.stories-popup__slider-pagination{
 	position: absolute;
 	top: 0;
+	bottom: auto !important;
+	right: auto !important;
 	left: 0;
-	width: calc(100% - 27px);
+	width: calc(100% - 27px) !important;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -205,11 +211,10 @@
 	align-items: stretch;
 	justify-content: space-between;
 }
-.stories-popup__slider .slick-dots li{
+.stories-popup__slider-pagination .swiper-pagination-bullet{
+	opacity: 1 !important;
 	flex-grow: 1;
-	margin-right: 3px;
-}
-.stories-popup__slider .slick-dots li button{
+	margin: 0 3px 0 0 !important;
 	display: block;
     padding: 0;
     outline: 0!important;
@@ -231,7 +236,7 @@
 	font-size: 0;
 	position: relative;
 }
-.stories-popup__slider .slick-dots li button:after{
+.stories-popup__slider-pagination .swiper-pagination-bullet:after{
 	content: '';
 	display: block;
 	position: absolute;
@@ -241,13 +246,18 @@
 	height: 3px;
 	background: #fff; 	
 }
-.stories-popup__slider .slick-dots li.slick-active ~ li button:after{
+.stories-popup__slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active ~ .swiper-pagination-bullet:after{
 	width: 0;
 }
-.stories-popup__slider .slick-dots li.slick-active button:after{
+.stories-popup__slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:after{
 	-webkit-animation: progbar 10s both linear;
 	-o-animation: progbar 10s both linear;
 	animation: progbar 10s both linear;
+}
+.stories-popup__slider.pause .stories-popup__slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:after{
+	-webkit-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
 }
 @-webkit-keyframes progbar {
 	from { width: 0; }
@@ -415,11 +425,11 @@
 		color: #fff;
 		margin-right: 15px;
 	}
-	.stories-popup__slider{
+	.stories-popup__slider-wrap{
 		position: relative;
 		padding: 0;
 	}
-	.stories-popup__slider .slick-dots{
+	.stories-popup__slider-pagination{
 		z-index: 5;
 		width: calc(100% + 3px);
 	}

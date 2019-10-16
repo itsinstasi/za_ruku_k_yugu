@@ -38,6 +38,29 @@
 	font-size: 14px;
 	color: var(--main-txt-color);
 }
+.header-up{display: none;}
+.scrolled .search{display: none;}
+.scrolled .header-up{
+	display: block;
+	color: var(--elems-color);
+}
+.scrolled .header-up i{
+	font-size: 24px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+.scrolled .header-up:hover{color: var(--elems-hover);}
+.header--main{
+	-webkit-transform: translateY(-110%);
+	transform: translateY(-110%);
+ 	-webkit-transition: .25s ease;
+ 	transition: .25s ease; 
+}
+.header--main.showed{
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
 
 @media only screen and (max-width : 767px){
 	.header__left{display: block;}
