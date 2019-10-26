@@ -4,6 +4,10 @@
 	width: calc(100% - 15px);
 	margin: 0 auto;	
 	overflow: hidden;
+	visibility: hidden;
+}
+.stories__slider.swiper-container-initialized {
+	visibility: visible;
 }
 .stories__slider-wrap{position: relative;}
 .stories__slider .swiper-slide{width: auto;}

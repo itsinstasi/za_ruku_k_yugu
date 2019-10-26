@@ -1,2 +1,4 @@
 ﻿User-agent: *
 Sitemap: https://za-ruku-k-yugu.itsinsta.site/sitemap.xml
+Disallow: /main.html
+Disallow: /main
