@@ -767,6 +767,10 @@ function getStoryBackground(title) {
 		return $(this).find("input").prop("id") == tag;
 	}).first();
 
+	var url = item.find("img").attr('data-src');
+	if (typeof url !== typeof undefined && url !== false) {
+		return url;
+	}
 	return item.find("img").prop('src');
 }
 
