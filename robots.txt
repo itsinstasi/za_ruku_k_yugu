@@ -4,3 +4,5 @@ Disallow: /main.html
 Disallow: /main
 Disallow: /stories.html
 Disallow: /stories
+Disallow: /tags
+Disallow: /tags/
