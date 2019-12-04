@@ -109,6 +109,8 @@
 
 					<div class="links-page-list">
 
+
+
 						<a href="./posts/./ispaniya-rastamozhka-avto.html" class="links-page-btn " style="
 " 
 >
@@ -120,6 +122,8 @@
 
 
 
+
+
 						<a href="./posts/./zabotlivaya-nyanya-dlya-soprovozhdenii-v-akvaparke.html" class="links-page-btn " style="
 " 
 >
@@ -128,6 +132,8 @@
 								Заботливая няня для сопровождении в аквапарке.
 							</strong>
 						</a>
+
+
 
 
 
@@ -164,5 +170,44 @@
 	<script src="js/jquery.init.js"></script>
 	<!--my scripts-->
 	<script src="js/jquery.main.js"></script>
+
+    <script type="text/javascript">
+function getFormData($form){
+    var unindexed_array = $form.serializeArray();
+    var indexed_array = {};
+
+    $.map(unindexed_array, function(n, i){
+        indexed_array[n['name']] = n['value'];
+    });
+
+    return indexed_array;
+}
+
+$(document).ready(function(){
+    $('form').submit(function(){
+	event.preventDefault(); //prevent default action 
+
+	var contact = $(this).find('input[name="contact"]').val();
+	if (!contact) return false;
+
+	var post_url = $(this).attr("action"); //get form action url
+	var request_method = $(this).attr("method"); //get form GET/POST method
+	var form_data = JSON.stringify(getFormData($(this)));
+
+	var form = $(this);
+	$.ajax({
+		url : post_url,
+		type: request_method,
+                contentType: 'application/json',
+		data : form_data
+	}).done(function(response){
+	}).fail(function(){
+	});
+
+        return false;
+    });
+});
+    </script>
+
 </body>
 </html>
