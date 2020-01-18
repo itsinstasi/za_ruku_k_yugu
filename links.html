@@ -62,13 +62,13 @@
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="./" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/74607469_437850007151367_3092679308443910144_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=UsaWRajQs3AAX9ipmRv&oh=c800b91236d90415d945fb87ee970a03&oe=5EA52069" alt="Наш Тенерифе"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/74607469_437850007151367_3092679308443910144_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=zhN_XU6LXtUAX9NbpCD&oh=0116f8d89b3c0aa9b8ab3c7d09bbc1fd&oe=5EA52069" alt="Наш Тенерифе"></div>
 							<div class="header__logo-txt">za_ruku_k_yugu</div>
 						</a>
 						<div class="header__title">Наш Тенерифе</div>
 					</div>
 					<div id="settingsContainer" class="header__right" style="display:none">
-						<button onclick="window.open('http://itsinsta.site/page.html?project=za_ruku_k_yugu');" class="btn stories-popup__buy">Настроить</button>
+						<button onclick="window.open('http://itsinsta.site/page.html?project=za_ruku_k_yugu', '_self');" class="btn stories-popup__buy">Настроить</button>
 					</div>
 				</div>
 			</div>
@@ -115,7 +115,7 @@
 
 
 						<div class="links-page-btn-pic">
-							<center><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/76887926_496999677585152_8091847520406293118_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108&_nc_ohc=amftncLYZBgAX8LegoF&oh=9b79fad314d05dfcee1a6b696c96b76b&oe=5E2370E7" alt="">
+							<center><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/76887926_496999677585152_8091847520406293118_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108&_nc_ohc=_UM0GYSnt5sAX8miZBF&oh=931cc2cf9803d2bf94070057cbbf9096&oe=5E24C267" alt="">
 							</img></center>
 						</div>
 
@@ -212,7 +212,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 $(document).ready(function(){
 	var lid = getUrlParameter("lid");
-	if (lid) {
+	if (lid && lid != "true") {
         localStorage.setItem("hasToken", true);
 
 		$("#settingsContainer").show();
